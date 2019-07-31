@@ -1,0 +1,41 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content padding class="home-background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>Log in as</ion-label>
+      </ion-col>
+    </ion-row> 
+    <ion-row no-padding>
+      <ion-col no-padding no-margin>
+        <ion-button class='login-btn' [routerLink]="['/login']" fill="outline" shape="round" size='large' color="primary">Owner</ion-button>
+      </ion-col>
+      <ion-col no-padding no-margin>
+          <ion-button class='login-btn' [routerLink]="['/login']" fill="outline" shape="round" size='large' color="primary">Customer</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row no-margin>
+      <ion-col>
+        <ion-button class='signup-btn' [routerLink]="['/register']" fill="solid" shape="round" size='large' color="primary">Sign up</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+

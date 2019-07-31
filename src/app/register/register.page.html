@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size-md="6" offset-md="3">
+                    <ion-item>
+                            <ion-label color='primary'>Register as</ion-label>
+                            <ion-select color='primary' placeholder="Select One">
+                              <ion-select-option value="owner">Owner</ion-select-option>
+                              <ion-select-option value="customer">Customer</ion-select-option>
+                            </ion-select>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">First Name</ion-label>
+                        <ion-input type="text" color="default"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">Last Name</ion-label>
+                        <ion-input type="text" color="default"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">Username</ion-label>
+                        <ion-input type="text" color="default"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">Email</ion-label>
+                        <ion-input type="email" color="default"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">Contact Number</ion-label>
+                        <ion-input type="tel" color="default"></ion-input>
+                    </ion-item>
+                    <br>
+                    <ion-item>
+                            <ion-label color='primary'>Gender</ion-label>
+                            <ion-select color='primary' placeholder="Select One">
+                              <ion-select-option value="f">Female</ion-select-option>
+                              <ion-select-option value="m">Male</ion-select-option>
+                            </ion-select>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">Password</ion-label>
+                        <ion-input type="password" color="default"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label color="primary" position="floating">Confirm Password</ion-label>
+                        <ion-input type="password" color="default"></ion-input>
+                    </ion-item>
+
+                          <br>
+                        <!-- should be registration function or service -->
+                        <ion-button [routerLink]="['/dashboard']" color="primary" fill="solid" shape="round">Sign Up</ion-button> 
+            </ion-col>
+        </ion-row>
+    </ion-grid> 
+</ion-content>
