@@ -1,12 +1,4 @@
-.home-background{
-    --background: url('assets/bg6.png') no-repeat center center fixed;
-
-}
-ion-grid{
-    margin-top: 100%;
-}
-ion-button.signup-btn{
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
 }

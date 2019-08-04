@@ -1,20 +1,20 @@
 <ion-header>
   <ion-toolbar>
       <ion-buttons slot="start">
-          <ion-back-button defaultHref="/home"></ion-back-button>
+          <ion-back-button defaultHref="/foodhub"></ion-back-button>
       </ion-buttons>
-    <ion-title>Owner Login</ion-title>
+    <ion-title>Login Here</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    
+<ion-content> 
+     
 <ion-grid>
       <ion-row>
           <ion-col size-md="6" offset-md="3">
                   <ion-item>
                       <ion-label color="primary" position="floating">Username</ion-label>
-                      <ion-input type="text" color="default" id="input-username"></ion-input>
+                      <ion-input type="text" color="default" id="input-username" required></ion-input>
                   </ion-item>
                   <ion-item>
                       <ion-label color="primary" position="floating">Password</ion-label>
@@ -22,7 +22,7 @@
                   </ion-item>
                         <br>
                       <!-- should be login function or service -->
-                      <ion-button [routerLink]="['/dashboard']" color="primary" fill="solid" shape="round">Sign in</ion-button> 
+                      <ion-button [routerLink]="['/home']" color="warning" fill="solid" shape="round">Sign in</ion-button> 
           </ion-col>
       </ion-row>
   </ion-grid>    

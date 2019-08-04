@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
       <ion-buttons slot="start">
-          <ion-back-button defaultHref="/home"></ion-back-button>
+          <ion-back-button defaultHref="/foodhub"></ion-back-button>
         </ion-buttons>
     <ion-title>Register</ion-title>
   </ion-toolbar>
@@ -18,7 +18,7 @@
                               <ion-select-option value="customer">Customer</ion-select-option>
                             </ion-select>
                     </ion-item>
-                    <ion-item>
+                    <ion-item> 
                         <ion-label color="primary" position="floating">First Name</ion-label>
                         <ion-input type="text" color="default"></ion-input>
                     </ion-item>
@@ -57,7 +57,7 @@
 
                           <br>
                         <!-- should be registration function or service -->
-                        <ion-button [routerLink]="['/dashboard']" color="primary" fill="solid" shape="round">Sign Up</ion-button> 
+                        <ion-button [routerLink]="['/home']" color="warning" fill="solid" shape="round">Sign Up</ion-button> 
             </ion-col>
         </ion-row>
     </ion-grid> 
